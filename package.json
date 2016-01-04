@@ -1,0 +1,20 @@
+{
+  "name": "bae-nodejs",
+  "version": "1.0.0",
+  "author": "bae",
+  "description": "The first bae nodejs app!",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "log4js": "0.6.9",
+    "mongoose": "^4.3.1",
+    "path": "^0.12.7",
+    "thrift": "0.9.1",
+    "wechat": "^2.0.3",
+    "wechat-api": "^1.22.0",
+    "wechat-oauth": "^1.1.0"
+  }
+}

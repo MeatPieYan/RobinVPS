@@ -1,0 +1,18 @@
+{
+	"button": [{
+		"name": "我的帐号",
+		"sub_button": [{
+				"type": "click",
+				"name": "我的账户",
+				"key": "V1001_MY_Account"
+			}]
+	},{
+		"name": "我要投资",
+		"type": "view",
+		"url": "http://www.baidu.com"
+	},{
+		"name": "我要送钱",
+		"type": "view",
+		"url": "http://www.baidu.com"
+	}]
+}
