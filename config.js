@@ -1,5 +1,5 @@
 module.exports = {
-	port: 18080,
+	port: 80,
 	domain: "http://robintest.duapp.com",
 	wechat: {
 		token: 'robintest',
