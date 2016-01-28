@@ -64,12 +64,12 @@ body.is-loading .banner .more {
 
 .banner {
     background-image: url("../images/bg.jpg");
-    background-position: center center;
+    background-position: center -20vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
     min-height: 35em;
     overflow: hidden;
     cursor: default;
@@ -292,9 +292,20 @@ body.is-loading .banner .more {
     margin-right: 100px;
 }
 
+.cover {
+    background: url("../images/overlay.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}   
+
 #one{
-    height: 85vh;
-    background-color: #fff;
+    height: 65vh;
+    background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -309,10 +320,45 @@ body.is-loading .banner .more {
 }
 
 #two {
+    background-image: url("../images/overlay.png"), url("../images/header.jpg");
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: cover, cover;
+
+}
+
+#two a{
+    text-decoration: none;
+    color: white;
+}
+
+#two a:hover, #two a:visited, #two a:link{
+    color: white;
+}
+
+#two i {
+    display: block;
+}
+
+#two div{
+    text-align: center;
+}
+
+#two>div {
+    color: white;
+    padding: 120px;
+}
+
+#two span{
+    font-size: larger;
+}
+
+#three {
     height: 100vh;
     background-color: #000;
 
 }
+
 
 @keyframes arrow {
     0% {
