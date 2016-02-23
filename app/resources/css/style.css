@@ -11,11 +11,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-h2 {
+.font_white {
     color: #fff;
 }
 
+.body--ready {
 
+    background: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    background-size: cover;
+    background-position: center -20vh;
+    height: 80vh;
+    text-align: center;
+}
+
+.body--ready canvas {
+    margin-top: 25vh;
+}
 
 .header {
      background-image: url("../images/header-default.jpg");
@@ -294,17 +307,45 @@ body.is-loading .banner .more {
     margin-right: 100px;
 }
 
+.display-block {
+    display: block !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
 #one{
-    height: 65vh;
     background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 80px 0px;
 }
 
 #one h3 {
     font-size: 2.5em;
     color: #000;
+}
+.star {
+    width: 60vh;
+    color: #000;
+    position: relative;
+}
+.star:after {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    content: "";
+    bottom: -4px;
+    left: 50%;
+    margin-left: -5px;
+    background-color: #8b8b8b;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
 }
 
 #two {
@@ -330,17 +371,9 @@ body.is-loading .banner .more {
     z-index: -1;
 }
 
-.text-center {
-    text-align: center;
-}
-
 #two>div {
     color: white;
     padding: 120px;
-}
-
-#two span{
-    font-size: larger;
 }
 
 #two a {
@@ -350,10 +383,6 @@ body.is-loading .banner .more {
 
 #two a:hover, #two a:visited, #two a:link{
     color: white;
-}
-
-#two i {
-    display: block;
 }
 
 #three {
