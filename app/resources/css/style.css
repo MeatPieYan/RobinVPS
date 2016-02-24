@@ -15,6 +15,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: #fff;
 }
 
+.align-left{
+    text-align: left;
+}
+
+.align-right{
+    text-align: right;
+}
+
 .body--ready {
 
     background: url("../images/bg.jpg");
@@ -76,6 +84,8 @@ body.is-loading .banner .more {
     transform: translateY(8.5em);
     opacity: 0;
 }
+
+
 
 .banner {
     background-image: url("../images/bg.jpg");
@@ -205,7 +215,6 @@ body.is-loading .banner .more {
     animation: arrow 0.75s linear infinite;
 }
 
-
 .navHeader {
     position: fixed;
     top: 0px;
@@ -321,16 +330,19 @@ body.is-loading .banner .more {
     display: flex;
     flex-direction: column;
     padding: 80px 0px;
+    box-shadow: 0px -4px 20px #B7B0B0;
 }
 
 #one h3 {
-    font-size: 2.5em;
+    font-size: 3em;
     color: #000;
+    margin-bottom: 40px;
 }
 .star {
     width: 60vh;
     color: #000;
     position: relative;
+    margin-bottom: 60px;
 }
 .star:after {
     position: absolute;
@@ -346,6 +358,50 @@ body.is-loading .banner .more {
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
+}
+
+.profile span{
+    display: block;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.profile>div {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.profile .about{
+    margin-right: -50px;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.profile .details {
+    margin-left: -50px;
+    padding-top: 20px;
+}
+
+.profile h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.robin-image {
+    background-image: url("../images/robin.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid rgba(11, 209, 226, 0.2);
+}
+
+.detail-label {
+    font-weight: bold;
 }
 
 #two {

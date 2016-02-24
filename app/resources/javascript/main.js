@@ -51,7 +51,7 @@ var S = {
     S.Drawing.init('.canvas');
     // document.body.classList.add('body--ready');
     
-    S.UI.simulate('Welcome!|I am|Robin');
+    S.UI.simulate('Welcome|I am|Robin');
 
     // S.Shape.render();
     S.Drawing.loop(function () {
@@ -165,13 +165,10 @@ S.UI = (function() {
 
     timedAction(function (index) {
       current = sequence.shift();
-      console.log("current", current);
 
       action = getAction(current);
-      console.log("action", action);
 
       value = getValue(current);
-      console.log("value", value);
       // S.ShapeBuilder.letter(current)
       S.Shape.switchShape(S.ShapeBuilder.letter(current));
     }, 2000, sequence.length);
@@ -181,7 +178,6 @@ S.UI = (function() {
 
   return {
     simulate: function(action){
-      console.log(action);
       performAction(action);
     }
   }
@@ -480,7 +476,6 @@ S.ShapeBuilder = (function () {
 
   return {
     letter: function (l) {
-      console.log("l", l);
       var s = 0;
 
       setFontSize(fontSize);
