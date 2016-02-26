@@ -11,6 +11,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
+a, a:hover, a:active, a:visited, a:link{
+    text-decoration: none !important;
+}
+
+a:hover, a:visited, a:link{
+    color: white;
+}
+
 .font_white {
     color: #fff;
 }
@@ -192,9 +200,7 @@ body.is-loading .banner .more {
     z-index: 1;
 }
 
-.banner a{
-    text-decoration: none !important;
-}
+
 
 .banner .more:after{
     background-image: url("../images/arrow.svg");
@@ -333,7 +339,7 @@ body.is-loading .banner .more {
     box-shadow: 0px -4px 20px #B7B0B0;
 }
 
-#one h3 {
+#one h3, #three h3 {
     font-size: 3em;
     color: #000;
     margin-bottom: 40px;
@@ -439,9 +445,7 @@ body.is-loading .banner .more {
     color: white;
 }
 
-#two a:hover, #two a:visited, #two a:link{
-    color: white;
-}
+
 
 .my-icon {
     position: relative;
@@ -477,9 +481,153 @@ body.is-loading .banner .more {
 }
 
 #three {
-    height: 100vh;
     background-color: #fff;
+    padding: 80px 0px;
+    text-align: center;
 }
+
+#three>div>div {
+    display: inline-block;
+    width: 40%;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h4{
+    font-size: 30px;
+    margin: 30px;
+}
+
+.email, .email div {
+  transition-duration: .6s;
+}
+
+.email, .button { 
+    transition-timing-function: ease; 
+}
+
+.email {
+    background: #A9ADB6;
+    box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+    height: 40px;
+    border-radius: .25rem;
+    width: 220px;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px;
+    perspective: 300px;
+}
+
+.button {
+    background-color: #929494;
+    height: 100%;
+    border-radius: .25rem;
+    padding: 5px;
+    opacity: 0;
+}
+
+.btn-cover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: .25rem;
+    transform-origin: center bottom;
+    transform-style: preserve-3d;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+    z-index: 100;
+    perse
+}
+
+.btn-out, .btn-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+    border-radius: .25rem;
+}
+
+.btn-out {
+   background-color: #515151; 
+   padding: 3px;
+   transform: translateZ(.25rem);
+   text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.btn-inner {
+  background-color: #8D8C8C;
+  text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+}
+
+.btn-shadow {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3.5rem;
+    transform-origin: center top;
+    transform: rotateX(90deg);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+    border-radius: .4rem;
+    z-index: 0;
+    opacity: 0;
+}
+
+.email:hover {
+    background-color: #EBEFF2;
+}
+
+.email:hover .button {
+    opacity: 1;
+}
+
+.button:hover {
+    background-color: #6C6C6C;
+}
+
+.email:hover .btn-cover { 
+    transform: rotateX(-120deg);  
+}
+
+.email:hover .btn-cover, .email:hover .outie, .email:hover .innie { 
+    transition-timing-function: cubic-bezier(.2,.7,.1,1.1); 
+}
+
+.email:hover .btn-out { 
+    background-color: #4E4E4E; 
+    color: rgba(255,255,255,0); 
+}
+
+
+.email:hover .btn-inner { 
+    background-color: #717171; 
+}
+
+.email:hover .btn-shadow { 
+  opacity: 1;
+  transform: rotateX(45deg) scale(.95);
+}
+
+.social, .social div{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social>div {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.wechat-mp span {
+   font-size: small;
+}
+
+
 
 @-webkit-keyframes border-show{
     0% {

@@ -51,7 +51,7 @@ var S = {
     S.Drawing.init('.canvas');
     // document.body.classList.add('body--ready');
     
-    S.UI.simulate('Welcome|I am|Robin');
+    S.UI.simulate('Hello|I am|Robin');
 
     // S.Shape.render();
     S.Drawing.loop(function () {
