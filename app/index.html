@@ -8,14 +8,17 @@
     <link rel="shortcut icon" href="app/resources/images/favicon.ico">
     <link rel="stylesheet" href="app/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/resources/css/style.css" >
+
+    <!-- for icon -->
+    <link rel="stylesheet" href="app/resources/css/font-awesome.min.css" >
 </head>
-<body>
+<body class="is-loading">
 
     <nav class="navHeader firstNav" id="navbar">
         <div class="inner-nav" >
             <ul class="clearlist">
-                <li><a href="/">Home</a></li>
-                <li><a href="#">About me</a></li>
+                <li><a href="#" id="btnHome">Home</a></li>
+                <li><a href="#" id="btnAbout">Profile</a></li>
                 <li><a href="#">Blogs</a></li>
                 <li><a href="#">Labs</a></li>
                 <li><a href="#">Contact me</a></li>
@@ -23,24 +26,97 @@
         </div>
     </nav>
 
-    <div class="banner">
+    <!--<div class="banner">
         <div class="inner">
-            <h2>Robin Yan</h2>
+            <h2 class="font_white">Robin Yan</h2>
         </div>
         <a id="more" href="#" class="more">More About Me</a>
+    </div>-->
+    <div class="body--ready">
+        <canvas class="canvas"></canvas>
     </div>
-
     <div id="one">
-        <div class="position">
-            <h3>Web Developer</h3>
-        </div>
-
+        <div class="position profile">
+            <h3>Profile</h3>
+            <hr class="star">
+            <div class="align-right about">
+                <h4>About me</h4>            
+                <span>Web developer</span>
+                <span>with good knowledge of front-end techniques</span>
+                <span>Familiar with NodeJS & JAVA</span>
+                <span>Working hard to make Internet awsome</span>
+                <span>Love travel, sports & Ukulele</span>
+            </div>
+            <div>
+                <div class="robin-image"></div>
+            </div>
+            <div>
+                <div class="align-left details">
+                    <h4>Details</h4>
+                    <span class="detail-label">Name:</span>
+                    <span>Robin Yan</span>
+                    <span class="detail-label">Age:</span>
+                    <span>29</span>
+                    <span class="detail-label">Location:</span>
+                    <span>Shanghai, China</span>
+                </div>
+            </div>
+        </div>       
     </div>
-    <div id="two">
 
+    <div id="two" class="text-center">
+        <div>
+            <a href="http://blog.robinyan.com">
+                <div class="my-icon">
+                    <i class="fa fa-book fa-5x"></i>
+                </div>
+                <span>My Blogs</span>
+            </a>
+        </div>
+        <div>
+            <div class="my-icon">
+                <i class="fa fa-flask fa-5x"></i>
+            </div>
+            <span>My Labs</span>
+        </div>
+        <div>
+            <div class="my-icon">
+                <i class="fa fa-camera-retro fa-5x"></i>
+            </div>
+            <span>My Life</span>   
+        </div>
     </div>
     <div id="three">
-
+        <h3>Contact</h3>
+        <hr class="star">
+        <div>
+            <div class="contact">
+                <h4>Contact me via email</h4>
+                <div class="email">
+                    <div class="button">
+                        <a href="#"><i class="fa fa-envelope-o fa-fw"></i>  robinyzg@hotmail.com</a>
+                    </div>
+                    <div class="btn-cover">
+                        <div class="btn-inner"><i class="fa fa-envelope-o fa-2x"></i></div>
+                        <div class="btn-spine"></div>
+                        <div class="btn-out"><i class="fa fa-envelope-o fa-2x"></i></div>
+                    </div>
+                    <div class="btn-shadow"></div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="wechat-mp">
+                    <div><i class="fa fa-wechat fa-4x"></i></div>
+                    <span>*Public Platform</span>
+                </div>
+                <div class="wechat">
+                    <div><i class="fa fa-wechat fa-4x"></i></div>
+                </div>
+                <div class="Weibo">
+                    <div><i class="fa fa-weibo fa-4x"></i></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="app/resources/javascript/jquery-2.1.4.min.js"></script>
     <script src="app/resources/javascript/main.js"></script>
